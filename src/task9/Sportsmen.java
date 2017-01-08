@@ -3,7 +3,7 @@ package task9;
 /**
  * Created by Olga on 18.12.2016.
  */
-public class Sportsmen implements Comparable {
+public class Sportsmen {
         private String nameSportsmen;
         private int countGold;
         private int countSilver;
@@ -18,17 +18,6 @@ public class Sportsmen implements Comparable {
         this.countGold = countGold;
         this.countSilver = countSilver;
         this.countBronze = countBronze;
-    }
-    @Override
-    public int compareTo(Object o) {
-        Sportsmen tmp = (Sportsmen)o;
-        if (this.countGold<tmp.countGold){
-            return 1;
-        }
-        else if (this.countGold>tmp.countGold){
-            return -1;
-        }
-        else return 0;
     }
 
 
